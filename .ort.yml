@@ -1,5 +1,9 @@
 ---
 excludes:
+  scopes:
+  - pattern: "devDependencies"
+    reason: "DEV_DEPENDENCY_OF"
+    comment: "Packages for development only."
   paths:
   - pattern: "tools/**"
     reason: "BUILD_TOOL_OF"
